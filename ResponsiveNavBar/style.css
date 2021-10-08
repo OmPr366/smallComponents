@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  nav {
+    width: 100vw;
+    height: 4.5rem;
+    background-color: rgb(26, 25, 25);
+    color: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 3rem 0px 5rem;
+    left: -100%;
+    
+  }
+  nav .logo {
+    font-size: 2.5rem;
+  }
+  nav ul {
+    display: flex;
+    transition: all 0.3s ease;
+    
+  }
+  nav ul li {
+    list-style: none;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    /* background-color: blueviolet; */
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+    background-color: aliceblue;
+    color: black;
+  }
+  #myBurger{
+    display: none;
+  }
+
+  @media (max-width: 868px) {
+    nav ul {
+      position: fixed;
+      top: 4.5rem;
+      background-color: black;
+      width: 100vw;
+      left: 0;
+      height: 100vh;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+      
+    }
+    .leftNav{
+        left: -100%;
+    }
+    nav ul li {
+      margin-bottom: 5rem;
+    }
+    nav ul li a{
+        font-size: 1.6rem;
+    }
+    #myBurger{
+      display: block;
+      color: rgb(255, 255, 255);
+    }
+  }
